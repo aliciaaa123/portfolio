@@ -21,14 +21,16 @@
     <li><a href="#service">Service</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a class="btn nav-resume" href="Alicia_Resume.pdf" download>Resume</a>
+  <a class="btn btn-primary nav-resume" href="Alicia_Resume.pdf" download>Resume</a>
   <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
 </nav>
 
 <!-- ===== HERO ===== -->
 <header class="hero">
   <div class="hero-content fade-in">
-    <img src="IMG_5812.jpeg" alt="Alicia Paulson" class="hero-photo" />
+    <div class="hero-photo-wrap">
+      <img src="IMG_5812.jpeg" alt="Alicia Paulson" class="hero-photo" />
+    </div>
     <div class="hero-text">
       <p class="hero-tag">Public Health Researcher &amp; Clinician</p>
       <h1>Alicia Paulson<span class="accent">, BDS MS</span></h1>
@@ -48,7 +50,7 @@
 <!-- ===== ABOUT ===== -->
 <section id="about" class="section fade-in">
   <div class="section-inner">
-    <h2 class="section-title">About Me</h2>
+    <div class="section-header"><h2 class="section-title">About Me</h2></div>
     <div class="about-grid">
       <div class="about-text card">
         <p>I am a multilingual public health researcher with dual clinical training — a <strong>Bachelor of Dental Surgery (BDS)</strong> and a <strong>Master of Science in Public Health Research (Translational &amp; Implementation Science)</strong> from Boston University.</p>
@@ -82,9 +84,9 @@
 </section>
 
 <!-- ===== IMPACT NUMBERS ===== -->
-<section id="impact" class="section impact-section fade-in">
+<section id="impact" class="section fade-in">
   <div class="section-inner">
-    <h2 class="section-title">Impact at a Glance</h2>
+    <div class="section-header"><h2 class="section-title">Impact at a Glance</h2></div>
     <div class="stats-grid">
       <div class="stat-card">
         <span class="stat-num">800+</span>
@@ -125,7 +127,7 @@
 <!-- ===== EXPERIENCE ===== -->
 <section id="experience" class="section fade-in">
   <div class="section-inner">
-    <h2 class="section-title">Work Experience</h2>
+    <div class="section-header"><h2 class="section-title">Work Experience</h2></div>
     <div class="timeline">
 
       <div class="tl-item">
@@ -256,7 +258,7 @@
 <!-- ===== RESEARCH ===== -->
 <section id="research" class="section fade-in">
   <div class="section-inner">
-    <h2 class="section-title">Research &amp; Projects</h2>
+    <div class="section-header"><h2 class="section-title">Research &amp; Projects</h2></div>
     <div class="projects-grid">
 
       <div class="project-card card">
@@ -320,11 +322,13 @@
 <!-- ===== SKILLS ===== -->
 <section id="skills" class="section fade-in">
   <div class="section-inner">
-    <h2 class="section-title">Skills</h2>
+    <div class="section-header"><h2 class="section-title">Skills</h2></div>
     <div class="skills-grid">
       <div class="skill-group card">
-        <div class="skill-icon">&#128201;</div>
-        <h3>Research &amp; Data Analysis</h3>
+        <div class="skill-group-header">
+          <div class="skill-icon">&#128201;</div>
+          <h3>Research &amp; Data Analysis</h3>
+        </div>
         <div class="skill-tags">
           <span>RStudio</span><span>SAS</span><span>Excel (Power Query/M-code)</span>
           <span>NVivo</span><span>REDCap</span><span>KoBoToolbox</span>
@@ -332,8 +336,10 @@
         </div>
       </div>
       <div class="skill-group card">
-        <div class="skill-icon">&#127973;</div>
-        <h3>Clinical &amp; Public Health</h3>
+        <div class="skill-group-header">
+          <div class="skill-icon">&#127973;</div>
+          <h3>Clinical &amp; Public Health</h3>
+        </div>
         <div class="skill-tags">
           <span>Patient Engagement</span><span>Survey Administration</span>
           <span>Program Evaluation</span><span>Oral Health Education</span>
@@ -342,8 +348,10 @@
         </div>
       </div>
       <div class="skill-group card">
-        <div class="skill-icon">&#128221;</div>
-        <h3>Communication &amp; Writing</h3>
+        <div class="skill-group-header">
+          <div class="skill-icon">&#128221;</div>
+          <h3>Communication &amp; Writing</h3>
+        </div>
         <div class="skill-tags">
           <span>Scientific Manuscript Writing</span><span>Study Materials (Flyers, SOPs)</span>
           <span>Questionnaire Design</span><span>IRB Documentation</span>
@@ -351,8 +359,10 @@
         </div>
       </div>
       <div class="skill-group card">
-        <div class="skill-icon">&#127760;</div>
-        <h3>Languages</h3>
+        <div class="skill-group-header">
+          <div class="skill-icon">&#127760;</div>
+          <h3>Languages</h3>
+        </div>
         <div class="skill-tags lang-tags">
           <span>English</span><span>Hindi</span><span>Malayalam</span><span>Tamil</span>
         </div>
@@ -364,7 +374,7 @@
 <!-- ===== ACADEMIC SERVICE ===== -->
 <section id="service" class="section fade-in">
   <div class="section-inner">
-    <h2 class="section-title">Academic Service</h2>
+    <div class="section-header"><h2 class="section-title">Academic Service</h2></div>
     <div class="card service-card">
       <div class="service-header">
         <div class="service-badge">Peer Reviewer</div>
@@ -383,7 +393,7 @@
           <li>AI-supported mindfulness therapy</li>
         </ul>
       </div>
-      <div class="project-tags" style="margin-top:1rem;">
+      <div class="project-tags service-paper-ids">
         <span>Paper IDs: 9491</span><span>9591</span><span>10213</span><span>10521</span><span>10573</span>
       </div>
     </div>
@@ -393,7 +403,7 @@
 <!-- ===== CONTACT ===== -->
 <section id="contact" class="section fade-in">
   <div class="section-inner">
-    <h2 class="section-title">Get In Touch</h2>
+    <div class="section-header"><h2 class="section-title">Get In Touch</h2></div>
     <div class="contact-grid">
       <a class="contact-card card" href="mailto:aliciaaa@bu.edu">
         <div class="contact-icon">&#9993;</div>
