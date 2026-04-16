@@ -9,54 +9,426 @@
 </head>
 <body>
 
-<nav>
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#research">Research</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-logo">AP</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn nav-resume" href="Alicia_Resume.pdf" download>Resume</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
 </nav>
 
-<header class="hero fade-in">
-<img src="IMG_5812.jpeg" alt="profile" />
-<h1>Alicia Paulson</h1>
-<p>Bridging Clinical Care, Public Health & Implementation Science</p>
-<a class="btn" href="Alicia_Resume.pdf" download>Download Resume</a>
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-content fade-in">
+    <img src="IMG_5812.jpeg" alt="Alicia Paulson" class="hero-photo" />
+    <div class="hero-text">
+      <p class="hero-tag">Public Health Researcher &amp; Clinician</p>
+      <h1>Alicia Paulson<span class="accent">, BDS MS</span></h1>
+      <p class="hero-sub">Bridging Clinical Care, Public Health &amp; Implementation Science</p>
+      <p class="hero-location">&#x1F4CD; Boston, MA</p>
+      <div class="hero-langs">
+        <span>English</span><span>Hindi</span><span>Malayalam</span><span>Tamil</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="Alicia_Resume.pdf" download>&#8659; Download Resume</a>
+        <a class="btn btn-outline" href="#contact">Get In Touch</a>
+      </div>
+    </div>
+  </div>
 </header>
 
-<section id="about" class="fade-in">
-<h2>About</h2>
-<div class="card">Public health researcher (BDS, MS) with strong clinical and implementation science background.</div>
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section fade-in">
+  <div class="section-inner">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text card">
+        <p>I am a multilingual public health researcher with dual clinical training — a <strong>Bachelor of Dental Surgery (BDS)</strong> and a <strong>Master of Science in Public Health Research (Translational &amp; Implementation Science)</strong> from Boston University.</p>
+        <p>My work sits at the intersection of <strong>clinical practice</strong>, <strong>evidence-based research</strong>, and <strong>data-driven decision-making</strong>. I bring hands-on experience across NIH-funded studies, hospital coordination, surgical care, and healthcare data analytics.</p>
+        <p>I am passionate about translating research into real-world health improvements for underserved communities.</p>
+      </div>
+      <div class="about-edu card">
+        <h3>Education</h3>
+        <div class="edu-item">
+          <div class="edu-icon">&#127979;</div>
+          <div>
+            <strong>MS, Public Health Research</strong><br/>
+            Translational &amp; Implementation Science<br/>
+            <span class="subtle">Boston University School of Public Health &bull; 2024–2025 &bull; GPA 3.5/4</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-icon">&#129458;</div>
+          <div>
+            <strong>Bachelor of Dental Surgery (BDS)</strong><br/>
+            <span class="subtle">Rajiv Gandhi University of Health Sciences, India &bull; 2016–2022 &bull; GPA 3.2/4</span>
+          </div>
+        </div>
+        <div class="cert-badges">
+          <span class="badge">HIPAA Certified</span>
+          <span class="badge">GCP Certified</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="experience" class="fade-in">
-<h2>Experience</h2>
-<div class="timeline">
-<div class="card">Boston Medical Center - Unit Coordinator</div>
-<div class="card">eBasis - Analyst Intern</div>
-<div class="card">Boston University - Research Assistant</div>
-</div>
+<!-- ===== IMPACT NUMBERS ===== -->
+<section id="impact" class="section impact-section fade-in">
+  <div class="section-inner">
+    <h2 class="section-title">Impact at a Glance</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-num">800+</span>
+        <span class="stat-label">Patients Treated</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">600</span>
+        <span class="stat-label">Oral Cancer Survey Participants</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">500+</span>
+        <span class="stat-label">NIH Study Participants Recruited</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">90%</span>
+        <span class="stat-label">Data Processing Time Reduced</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">30%</span>
+        <span class="stat-label">Improvement in Cancer Awareness</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">1,000+</span>
+        <span class="stat-label">Community Outreach Individuals</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">4</span>
+        <span class="stat-label">IRB Submissions (100% Compliant)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">5+</span>
+        <span class="stat-label">Peer-Reviewed Manuscripts (HICSS-59)</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="research" class="fade-in">
-<h2>Research</h2>
-<div class="card">NIH All of Us + Nutrition for Precision Health</div>
-<div class="card">Oral cancer awareness study (600 patients)</div>
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section fade-in">
+  <div class="section-inner">
+    <h2 class="section-title">Work Experience</h2>
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content card">
+          <div class="tl-header">
+            <div>
+              <h3>Unit Coordinator</h3>
+              <span class="tl-org">Boston Medical Center – Surgical Step-Down Unit (M3W)</span>
+            </div>
+            <span class="tl-date">Dec 2025 – Present</span>
+          </div>
+          <ul>
+            <li>Coordinate interdisciplinary care among nurses, physicians, and ancillary services for post-operative and high-acuity surgical patients.</li>
+            <li>First point of contact for patients &amp; families across a fast-paced inpatient hospital setting.</li>
+            <li>Maintain accurate EMR records (EPIC) — admissions, transfers, discharge documentation, and order processing.</li>
+            <li>Triage urgent concerns and escalate medical emergencies; collaborate with charge nurse during rapid response and code events.</li>
+            <li>Manage unit communications (phones, paging physicians, lab coordination, consult services) to support timely clinical decision-making.</li>
+            <li>Ensure HIPAA compliance and patient confidentiality across all operations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content card">
+          <div class="tl-header">
+            <div>
+              <h3>Business Operations Analysis Intern</h3>
+              <span class="tl-org">eBasis.org</span>
+            </div>
+            <span class="tl-date">Aug 2025 – Feb 2026</span>
+          </div>
+          <ul>
+            <li><strong>Automated quarterly psychiatric data reports</strong> using Excel Power Query (M-code), reducing manual processing time by <strong>90%</strong> — from several days to a few hours.</li>
+            <li>Analyzed psychiatric outcomes and operational metrics for <strong>2,000+ patient records</strong>, generating actionable insights for clinicians and administrators.</li>
+            <li>Created dashboards and performance reports in Excel for key quality indicators (patient progress scores, clinician utilization, retention rates).</li>
+            <li>Documented process workflows and developed SOPs for data management — enhancing reproducibility for future reporting cycles.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content card">
+          <div class="tl-header">
+            <div>
+              <h3>Clinical Graduate Research Assistant</h3>
+              <span class="tl-org">Boston University School of Medicine – "All of Us" Research Program</span>
+            </div>
+            <span class="tl-date">Oct 2024 – May 2025</span>
+          </div>
+          <ul>
+            <li>Engaged 10+ participants per day through telephonic &amp; in-person structured surveys; utilized EPIC for outreach and follow-up.</li>
+            <li>Supported NIH All of Us Research Program at Boston Medical Center — participant retention and engagement strategies.</li>
+            <li>Screened and recruited <strong>500+ participants</strong> from diverse populations for the NIH Nutrition for Precision Health (NPH) study in collaboration with Tufts Medical Center.</li>
+            <li>Administered informed consent and ensured data accuracy compliance with research protocols.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content card">
+          <div class="tl-header">
+            <div>
+              <h3>Research Management</h3>
+              <span class="tl-org">Boston University Medical School – General Clinical Research Unit (GCRU)</span>
+            </div>
+            <span class="tl-date">Mar 2025 – May 2025</span>
+          </div>
+          <ul>
+            <li>Designed a research study end-to-end, creating <strong>10+ data collection tools</strong> (questionnaires, interview scripts, flyers) using REDCap, Canva, and MS Office.</li>
+            <li>Led a single-site survey of <strong>120+ non-research personnel</strong> on knowledge and attitudes toward clinical research.</li>
+            <li>Assisted in preparing and submitting <strong>4 IRB applications and amendments</strong> with <strong>100% compliance</strong>.</li>
+            <li>Coordinated a 6-member study team, achieving <strong>95% on-time task completion</strong>.</li>
+            <li>Supported 3+ NIH-funded study protocols, tracking 10+ key performance metrics for quarterly NIH reporting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content card">
+          <div class="tl-header">
+            <div>
+              <h3>PI / Clinical Research Associate / Junior Doctor</h3>
+              <span class="tl-org">Paalana Institute of Medical Sciences, Kerala, India – Oral &amp; Maxillofacial Surgery</span>
+            </div>
+            <span class="tl-date">Sep 2022 – May 2024</span>
+          </div>
+          <ul>
+            <li>Led, designed, and implemented an oral cancer awareness survey of <strong>600 patients</strong>; performed statistical analysis in RStudio with Python-generated figures for publication.</li>
+            <li>Conducted <strong>~600 patient education sessions</strong> on oral health and cancer prevention — achieving a <strong>30% improvement in awareness</strong> (pre/post surveys).</li>
+            <li>Managed <strong>50+ emergency cases</strong> and provided care to <strong>300+ maxillofacial trauma patients</strong>.</li>
+            <li>Interpreted <strong>200+ CBCT scans and MRI images</strong> for diagnostic decisions and treatment planning.</li>
+            <li>Identified <strong>30+ early-stage oral cancer cases</strong> through oncological screening.</li>
+            <li>Led large-scale oral cancer prevention campaigns screening <strong>~400 underserved individuals</strong> in rural communities.</li>
+            <li>Administered polio vaccines to <strong>150+ children</strong> as part of Indian government vaccination initiatives.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content card">
+          <div class="tl-header">
+            <div>
+              <h3>General Dentistry Intern – Clinical Rotation &amp; Research Associate</h3>
+              <span class="tl-org">Rajiv Gandhi University of Health Sciences</span>
+            </div>
+            <span class="tl-date">Oct 2020 – May 2022</span>
+          </div>
+          <ul>
+            <li>Completed an 18-month rotating internship across Oral Surgery, Prosthodontics, Periodontics, Pedodontics, Endodontics, and Community Dentistry.</li>
+            <li>Provided comprehensive dental care to <strong>800+ patients</strong>, including preventive, restorative, and emergency treatments.</li>
+            <li>Performed <strong>120+ minor oral surgeries</strong> and assisted in <strong>50+ major maxillofacial procedures</strong>.</li>
+            <li>Fabricated and delivered <strong>150+ prosthetic appliances</strong> (crowns, dentures, bridges).</li>
+            <li>Delivered oral health education and preventive services to <strong>1,000+ underserved individuals</strong> in rural areas.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<section id="projects" class="fade-in">
-<h2>Projects</h2>
-<div class="card">AI Asthma Implementation (CFIR/TAM)</div>
-<div class="card">PATH Data Analysis (R)</div>
+<!-- ===== RESEARCH ===== -->
+<section id="research" class="section fade-in">
+  <div class="section-inner">
+    <h2 class="section-title">Research &amp; Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card card">
+        <div class="project-tag">NIH-Funded</div>
+        <h3>All of Us &amp; Nutrition for Precision Health (NPH)</h3>
+        <p>Supported NIH All of Us Research Program at Boston Medical Center. Screened and recruited <strong>500+ participants</strong> from diverse populations for the Nutrition for Precision Health study — a joint effort between Tufts Medical Center and Boston Medical Center — contributing to precision medicine advancement.</p>
+        <div class="project-tags">
+          <span>NIH</span><span>EPIC</span><span>REDCap</span><span>Participant Recruitment</span>
+        </div>
+      </div>
+
+      <div class="project-card card">
+        <div class="project-tag">Publication-Ready</div>
+        <h3>Oral Cancer Awareness Survey (600 Patients)</h3>
+        <p>Designed and led a survey of <strong>600 patients</strong> to analyze oral cancer awareness. Performed statistical analysis in <strong>RStudio</strong> and created Python-generated figures for publication. Achieved a <strong>30% improvement in awareness scores</strong> through 600+ education sessions.</p>
+        <div class="project-tags">
+          <span>RStudio</span><span>Python</span><span>Survey Design</span><span>Statistical Analysis</span>
+        </div>
+      </div>
+
+      <div class="project-card card">
+        <div class="project-tag">Data Engineering</div>
+        <h3>Psychiatric Data Automation – eBasis</h3>
+        <p>Developed Excel Power Query (M-code) workflows to automate quarterly psychiatric data reports for <strong>2,000+ patient records</strong>. Reduced manual processing time by <strong>90%</strong>. Created dashboards improving visibility of patient progress scores, clinician utilization, and retention rates.</p>
+        <div class="project-tags">
+          <span>Excel M-code</span><span>Power Query</span><span>Dashboards</span><span>SOPs</span>
+        </div>
+      </div>
+
+      <div class="project-card card">
+        <div class="project-tag">Implementation Science</div>
+        <h3>AI in Asthma Implementation (CFIR/TAM)</h3>
+        <p>Applied theoretical frameworks including the <strong>Consolidated Framework for Implementation Research (CFIR)</strong> and <strong>Technology Acceptance Model (TAM)</strong> to evaluate AI-driven asthma management implementation strategies, analyzing barriers and facilitators across health systems.</p>
+        <div class="project-tags">
+          <span>CFIR</span><span>TAM</span><span>AI in Health</span><span>Implementation Science</span>
+        </div>
+      </div>
+
+      <div class="project-card card">
+        <div class="project-tag">Epidemiology</div>
+        <h3>PATH Data Analysis (Population Assessment of Tobacco and Health)</h3>
+        <p>Conducted quantitative analysis of the PATH dataset using <strong>R</strong> to examine tobacco use patterns and health outcomes. Applied complex survey methods and regression analyses to generate population-level insights.</p>
+        <div class="project-tags">
+          <span>R / RStudio</span><span>Survey Analysis</span><span>Epidemiology</span><span>PATH Dataset</span>
+        </div>
+      </div>
+
+      <div class="project-card card">
+        <div class="project-tag">Institutional Research</div>
+        <h3>Research Culture Survey – GCRU (120+ Personnel)</h3>
+        <p>Designed a single-site study from inception to execution — created <strong>10+ data collection tools</strong> using REDCap, Canva, and MS Office. Surveyed <strong>120+ non-research personnel</strong> on attitudes toward clinical research to inform institutional training needs.</p>
+        <div class="project-tags">
+          <span>REDCap</span><span>IRB</span><span>KoBoToolbox</span><span>Mixed Methods</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="fade-in">
-<h2>Contact</h2>
-<div class="card">Email: aliciaaa@bu.edu<br/>LinkedIn: linkedin.com/in/aliciapaulson</div>
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section fade-in">
+  <div class="section-inner">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group card">
+        <div class="skill-icon">&#128201;</div>
+        <h3>Research &amp; Data Analysis</h3>
+        <div class="skill-tags">
+          <span>RStudio</span><span>SAS</span><span>Excel (Power Query/M-code)</span>
+          <span>NVivo</span><span>REDCap</span><span>KoBoToolbox</span>
+          <span>Lucidchart</span><span>GitHub</span><span>Python</span>
+        </div>
+      </div>
+      <div class="skill-group card">
+        <div class="skill-icon">&#127973;</div>
+        <h3>Clinical &amp; Public Health</h3>
+        <div class="skill-tags">
+          <span>Patient Engagement</span><span>Survey Administration</span>
+          <span>Program Evaluation</span><span>Oral Health Education</span>
+          <span>EMR (EPIC)</span><span>IRB Submissions</span>
+          <span>HIPAA Compliance</span><span>GCP</span>
+        </div>
+      </div>
+      <div class="skill-group card">
+        <div class="skill-icon">&#128221;</div>
+        <h3>Communication &amp; Writing</h3>
+        <div class="skill-tags">
+          <span>Scientific Manuscript Writing</span><span>Study Materials (Flyers, SOPs)</span>
+          <span>Questionnaire Design</span><span>IRB Documentation</span>
+          <span>Stakeholder Reporting</span><span>Strategic Planning</span>
+        </div>
+      </div>
+      <div class="skill-group card">
+        <div class="skill-icon">&#127760;</div>
+        <h3>Languages</h3>
+        <div class="skill-tags lang-tags">
+          <span>English</span><span>Hindi</span><span>Malayalam</span><span>Tamil</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACADEMIC SERVICE ===== -->
+<section id="service" class="section fade-in">
+  <div class="section-inner">
+    <h2 class="section-title">Academic Service</h2>
+    <div class="card service-card">
+      <div class="service-header">
+        <div class="service-badge">Peer Reviewer</div>
+        <span class="tl-date">Jul 2025 – Aug 2025</span>
+      </div>
+      <h3>59th Hawaii International Conference on System Sciences (HICSS-59)</h3>
+      <p class="subtle">Track: AI-Driven Healthcare — Bridging Systems Science and Clinical Practice</p>
+      <p>Reviewed <strong>5+ manuscripts</strong> on cutting-edge AI in healthcare topics, providing critical feedback on methodology and implementation science approaches.</p>
+      <div class="reviewed-topics">
+        <strong>Topics reviewed:</strong>
+        <ul>
+          <li>Federated learning in healthcare</li>
+          <li>AI in clinical dentistry</li>
+          <li>Pediatric surgery prediction models</li>
+          <li>Telehealth language assessment</li>
+          <li>AI-supported mindfulness therapy</li>
+        </ul>
+      </div>
+      <div class="project-tags" style="margin-top:1rem;">
+        <span>Paper IDs: 9491</span><span>9591</span><span>10213</span><span>10521</span><span>10573</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section fade-in">
+  <div class="section-inner">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-grid">
+      <a class="contact-card card" href="mailto:aliciaaa@bu.edu">
+        <div class="contact-icon">&#9993;</div>
+        <div>
+          <strong>Email</strong>
+          <p>aliciaaa@bu.edu</p>
+        </div>
+      </a>
+      <a class="contact-card card" href="https://linkedin.com/in/aliciapaulson" target="_blank" rel="noopener noreferrer">
+        <div class="contact-icon">&#128101;</div>
+        <div>
+          <strong>LinkedIn</strong>
+          <p>linkedin.com/in/aliciapaulson</p>
+        </div>
+      </a>
+      <a class="contact-card card" href="tel:+18623447323">
+        <div class="contact-icon">&#128222;</div>
+        <div>
+          <strong>Phone</strong>
+          <p>(862) 344–7323</p>
+        </div>
+      </a>
+      <a class="contact-card card" href="Alicia_Resume.pdf" download>
+        <div class="contact-icon">&#128196;</div>
+        <div>
+          <strong>Resume</strong>
+          <p>Download PDF</p>
+        </div>
+      </a>
+    </div>
+  </div>
 </section>
 
 <footer>
-<p>© 2026 Alicia Paulson</p>
+  <p>© 2026 Alicia Paulson · Boston, MA</p>
 </footer>
 
 </body>
